@@ -25,7 +25,8 @@
 }
 
 @layer utilities {
-    .home__tilte {
+    .home__tilte,
+    .card__title {
         @apply text-4xl font-oswald font-bold uppercase lg:text-6xl;
     }
 
@@ -35,5 +36,9 @@
 
     .paragraph {
         @apply text-paragraphColor text-xs leading-5;
+    }
+
+    .card__title {
+        @apply text-xl;
     }
 }
