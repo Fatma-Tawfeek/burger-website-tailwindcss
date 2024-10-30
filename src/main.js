@@ -21,6 +21,30 @@ closeBtn.addEventListener("click", () => {
 
 /*~~~~~~~~~~~~~~~ TABS ~~~~~~~~~~~~~~~*/
 
+const tabs = document.querySelectorAll(".tabs_wrap ul li");
+const all = document.querySelectorAll(".all");
+
+tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+        /* tabs */
+        tabs.forEach((tab) => {
+            tab.classList.remove("active");
+        });
+        tab.classList.add("active");
+
+        /* items */
+        all.forEach((item) => {
+            item.style.display = "none";
+        });
+
+        const tabval = tab.getAttribute("data-tabs");
+        const items = document.querySelectorAll(`.${tabval}`);
+        items.forEach((item) => {
+            item.style.display = "block";
+        });
+    });
+});
+
 /*~~~~~~~~~~~~~~~ DARK LIGHT THEME ~~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~ SHOW SCROLL UP ~~~~~~~~~~~~~~~*/
