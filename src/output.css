@@ -683,6 +683,14 @@ section{
   margin-left: 1rem;
 }
 
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.ml-auto{
+  margin-left: auto;
+}
+
 .block{
   display: block;
 }
@@ -707,6 +715,10 @@ section{
   height: 14rem;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .w-28{
   width: 7rem;
 }
@@ -721,6 +733,10 @@ section{
 
 .w-full{
   width: 100%;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .max-w-md{
@@ -821,6 +837,10 @@ section{
   border-radius: 1.5rem;
 }
 
+.rounded-full{
+  border-radius: 9999px;
+}
+
 .border-b{
   border-bottom-width: 1px;
 }
@@ -859,6 +879,10 @@ section{
   padding: 1.25rem;
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -877,6 +901,11 @@ section{
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pt-5{
@@ -933,6 +962,16 @@ section{
 .text-secondaryColor{
   --tw-text-opacity: 1;
   color: rgb(255 204 0 / var(--tw-text-opacity));
+}
+
+.placeholder-sky-100::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(224 242 254 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-sky-100::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(224 242 254 / var(--tw-placeholder-opacity));
 }
 
 .duration-200{
