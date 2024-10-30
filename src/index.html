@@ -35,7 +35,10 @@
     </head>
     <body>
         <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
-        <header id="header" class="bg-primaryColor fixed top-0 left-0 w-full z-50">
+        <header
+            id="header"
+            class="bg-primaryColor fixed top-0 left-0 w-full z-50 border-b border-secondaryColor"
+        >
             <nav class="container relative h-14 flex justify-between items-center">
                 <div>
                     <a href="#" class="text-2xl uppercase font-oswald">
@@ -755,7 +758,27 @@
             </section>
 
             <!--~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~-->
-            <section id="contact"></section>
+            <section id="contact" class="bg-secondaryColor py-16">
+                <div class="container flex flex-col gap-5 md:items-center md:flex-row">
+                    <div class="space-y-4 md:flex-1">
+                        <h2 class="section__title text-blackColor">GET EXCLUSIVE UPDATE</h2>
+                        <p class="text-sm">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-3 md:flex-row md:flex-1">
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            class="p-2 text-blackColor rounded-lg outline-none md:w-full"
+                        /><a
+                            href="#"
+                            class="flex items-center justify-center gap-2 btn bg-blackColor hover:opacity-75"
+                            ><i class="fa-solid fa-paper-plane"></i> Subscribe</a
+                        >
+                    </div>
+                </div>
+            </section>
         </main>
         <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
         <footer>
